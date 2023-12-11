@@ -1,0 +1,39 @@
+// вначале всегда должны быть импорты //
+@import "../vars";
+
+.header {
+    width: 100%;
+    max-height: 82px;
+    .header__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 12px;
+        .header__logo {
+            margin-right: auto;
+        }
+        .nav__link {
+            padding: 0px 20px;
+        }
+        .nav__link_grey {
+            width: 114px;
+            height: 42px;
+            flex-shrink: 0;
+            border-radius: 3px;
+            background: #dddbda;
+            text-align: center;
+            padding-top: 12px;
+        }
+        .nav__link-icon {
+            padding-left: 20px;
+        }
+        @media (max-width: 750px) {
+            display: block;
+        }
+        @media (max-width: 750px) {
+            content: url(/image/burger.svg);
+            margin-left: auto;
+        }
+    }
+}
